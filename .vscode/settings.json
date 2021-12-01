@@ -1,0 +1,5 @@
+{
+  "cSpell.words": ["dequal", "himiko", "vite", "vitejs"],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
