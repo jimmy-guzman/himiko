@@ -4,7 +4,14 @@ import {
   HimikoChangeHandler,
   HimikoState,
   HimikoPossibleValues,
+  HimikoChangeEvent,
 } from './himiko-types'
+
+const isCheckbox = (
+  event: HimikoChangeEvent
+): event is React.ChangeEvent<HTMLInputElement> => {
+  return Object.prototype.hasOwnProperty.call(event.target, 'checked')
+}
 
 export const useHimikoState = <T extends HimikoPossibleValues>(
   initialState: T
@@ -13,6 +20,12 @@ export const useHimikoState = <T extends HimikoPossibleValues>(
 
   const handleChange: HimikoChangeHandler = (event) => {
     setFormState((prevState) => {
+      if (isCheckbox(event)) {
+        return {
+          ...prevState,
+          [event.target.name]: event.target.checked,
+        }
+      }
       return {
         ...prevState,
         [event.target.name]: event.target.value,

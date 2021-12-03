@@ -1,7 +1,8 @@
-import { Checkbox, FormControlLabel, Grid, Typography } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 
 import { AddressInputs } from './address-inputs'
 import { NameInputs } from './name-inputs'
+import { SaveAddressCheckbox } from './save-address-checkbox'
 
 export const AddressForm = (): JSX.Element => {
   return (
@@ -13,12 +14,7 @@ export const AddressForm = (): JSX.Element => {
         <NameInputs />
         <AddressInputs />
         <Grid item xs={12}>
-          <FormControlLabel
-            control={
-              <Checkbox color="secondary" name="saveAddress" value="yes" />
-            }
-            label="Use this address for payment details"
-          />
+          <SaveAddressCheckbox />
         </Grid>
       </Grid>
     </>

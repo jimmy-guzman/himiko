@@ -5,6 +5,7 @@ export interface AddressFormState {
   country: string
   firstName: string
   lastName: string
+  shouldSaveAddress: boolean
   state: string
   zip: string
 }
@@ -16,6 +17,7 @@ export const addressFormStateInitialState: AddressFormState = {
   country: '',
   firstName: '',
   lastName: '',
+  shouldSaveAddress: false,
   state: '',
   zip: '',
 }
