@@ -15,6 +15,7 @@ specifiers:
   esbuild-jest: ^0.5.0
   eslint: 8.3.0
   eslint-config-jimmy-guzman: 1.2.2
+  gitzy: ^2.1.0
   jest: ^27.4.3
   prettier: 2.5.0
   react: 17.0.2
@@ -43,6 +44,7 @@ devDependencies:
   esbuild-jest: 0.5.0_esbuild@0.14.1
   eslint: 8.3.0
   eslint-config-jimmy-guzman: 1.2.2_425ff817be9b1b815966e74385820047
+  gitzy: 2.1.0
   jest: 27.4.3
   prettier: 2.5.0
   react: 17.0.2
@@ -1926,6 +1928,11 @@ packages:
       delayed-stream: 1.0.0
     dev: true
 
+  /commander/8.3.0:
+    resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
+    engines: {node: '>= 12'}
+    dev: true
+
   /component-emitter/1.3.0:
     resolution: {integrity: sha512-Rd3se6QB+sO1TwqZjscQrurpEPIfO0/yYnSin6Q/rD3mOutHvUrCAhJub3r90uNb+SESBuE0QYoB90YdfatsRg==}
     dev: true
@@ -1953,6 +1960,17 @@ packages:
   /cosmiconfig/6.0.0:
     resolution: {integrity: sha512-xb3ZL6+L8b9JLLCx3ZdoZy4+2ECphCMo2PwqgP1tlfVq6M6YReyzBJtvWWtbDSpNr9hn96pkCiZqUcFEc+54Qg==}
     engines: {node: '>=8'}
+    dependencies:
+      '@types/parse-json': 4.0.0
+      import-fresh: 3.3.0
+      parse-json: 5.2.0
+      path-type: 4.0.0
+      yaml: 1.10.2
+    dev: true
+
+  /cosmiconfig/7.0.1:
+    resolution: {integrity: sha512-a1YWNUV2HwGimB7dU2s1wUMurNKjpx60HxBB6xUM8Re+2s1g1IIfJvFR0/iCF+XHdE0GMTKTuLR32UQff4TEyQ==}
+    engines: {node: '>=10'}
     dependencies:
       '@types/parse-json': 4.0.0
       import-fresh: 3.3.0
@@ -3125,6 +3143,17 @@ packages:
   /get-value/2.0.6:
     resolution: {integrity: sha1-3BXKHGcjh8p2vTesCjlbogQqLCg=}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /gitzy/2.1.0:
+    resolution: {integrity: sha512-u5hdE1vtbxXm3GwBz1mP3e5Ly5XpIGuNxHrRuZuzHLtzDnvWxRKjxnyj+WCjoGjDbxL7X+DCRbfmw5kDyoGTQg==}
+    engines: {node: '>= 12'}
+    hasBin: true
+    dependencies:
+      ansi-colors: 4.1.1
+      commander: 8.3.0
+      cosmiconfig: 7.0.1
+      enquirer: 2.3.6
     dev: true
 
   /glob-parent/5.1.2:

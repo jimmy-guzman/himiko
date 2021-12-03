@@ -25,6 +25,7 @@
     "esbuild-jest": "^0.5.0",
     "eslint": "8.3.0",
     "eslint-config-jimmy-guzman": "1.2.2",
+    "gitzy": "^2.1.0",
     "jest": "^27.4.3",
     "prettier": "2.5.0",
     "react": "17.0.2",
